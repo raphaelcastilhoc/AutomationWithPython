@@ -1,5 +1,5 @@
 import pyperclip
-import TextExtractor
+import Helpers.TextExtractor as TextExtractor
 
 text = str(pyperclip.paste())
 

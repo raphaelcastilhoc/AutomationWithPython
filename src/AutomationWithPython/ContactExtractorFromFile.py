@@ -1,5 +1,5 @@
 from os import path
-import TextExtractor
+import Helpers.TextExtractor as TextExtractor
 
 filePath = input('Type the file path: ')
 
