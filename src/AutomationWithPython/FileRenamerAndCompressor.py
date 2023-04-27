@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import zipfile
+import uuid
 
 directoryPath = input('Type the directory path: ')
 
@@ -10,7 +11,7 @@ if not os.path.isdir(directoryPath):
 
 files = [fileName for fileName in os.listdir(directoryPath) if os.path.isfile(os.path.join(directoryPath, fileName))]
 
-zipFilePath = Path(directoryPath, 'new_zip.zip')
+zipFilePath = Path(directoryPath, 'new_zip%s.zip' % uuid.uuid4())
 zipArchiver = zipfile.ZipFile(zipFilePath, 'a')
 for fileName in files:
     fileNameWithoutExtension, fileExtension = os.path.splitext(fileName)

@@ -1,6 +1,11 @@
 import re
 
 def extractContacts(text):
+    matches = []
+
+    if not text or not isinstance(text, str):
+        return matches
+
     brazilianPhoneRegex = re.compile(r'''(
     (\d{2}|\(\d{2}\))? # area code
     (\s|-|\.)? # separator
@@ -16,7 +21,6 @@ def extractContacts(text):
     (\.[a-zA-Z]{2,4}) # dot-something
     )''', re.VERBOSE)
 
-    matches = []
     for groups in brazilianPhoneRegex.findall(text):
         phoneNumber = ''.join([groups[1], groups[3], groups[5]])
         matches.append(phoneNumber)
