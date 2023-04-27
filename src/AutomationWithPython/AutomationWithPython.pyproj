@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7232c59b-f318-42e9-8a52-2c61e5d10ecc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FileCopierByExtension.py</StartupFile>
+    <StartupFile>ClipboardContactExtractor.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,11 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ContactExtractorFromClipboard.py" />
-    <Compile Include="ContactExtractorFromFile.py" />
+    <Compile Include="ClipboardContactExtractor.py" />
+    <Compile Include="FileContactExtractor.py" />
     <Compile Include="FileCopierByExtension.py" />
     <Compile Include="FileRenamerAndCompressor.py" />
     <Compile Include="Helpers\TextExtractor.py" />
+    <Compile Include="WebScrapingTopResultOpener.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
