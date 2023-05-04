@@ -4,9 +4,9 @@ from types import SimpleNamespace
 
 currency = input('Type the currency: ')
 
-baseAddrees = 'https://api.exchangerate.host/latest?base=%s' % currency
+exchangeRateUrl = 'https://api.exchangerate.host/latest?base=%s' % currency
 
-response = requests.get(baseAddrees)
+response = requests.get(exchangeRateUrl)
 response.raise_for_status()
 
 exchangeRateData = json.loads(response.text, object_hook=lambda d: SimpleNamespace(**d))
