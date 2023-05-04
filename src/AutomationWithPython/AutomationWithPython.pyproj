@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7232c59b-f318-42e9-8a52-2c61e5d10ecc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MainExchangeRatesExtractor.py</StartupFile>
+    <StartupFile>ImageResizer.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,8 @@
     <Compile Include="CsvContactExtractor.py" />
     <Compile Include="ExcelContactExtractor.py" />
     <Compile Include="ExchangeRateExtractor.py" />
+    <Compile Include="ImageResizer.py" />
+    <Compile Include="ImageRotator.py" />
     <Compile Include="MainExchangeRatesExtractor.py" />
     <Compile Include="TxtContactExtractor.py" />
     <Compile Include="FileCopierByExtension.py" />
